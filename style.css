@@ -1,0 +1,180 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Plus Jakarta Sans', sans-serif;
+
+background: linear-gradient(
+135deg,
+#FDFCF0 0%,
+#F5F2E8 40%,
+#FDFCF0 100%
+);
+
+color:#1A1A1A;
+line-height:1.6;
+}
+
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:#FDFCF0;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+}
+
+.logo{
+font-family:'Playfair Display', serif;
+font-size:24px;
+font-weight:700;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#000;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#BC6E25;
+}
+
+
+/* Hero Section */
+
+.hero{
+min-height:60vh;
+display:flex;
+align-items:center;
+padding:120px 10% 60px;
+
+background:
+radial-gradient(circle at 20% 30%, rgba(188,110,37,0.15), transparent 40%),
+radial-gradient(circle at 80% 70%, rgba(40,54,24,0.15), transparent 40%);
+}
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+width:100%;
+gap:40px;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-family:'Playfair Display', serif;
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+margin-bottom:20px;
+color:#333;
+}
+
+.social-icons{
+margin-bottom:25px;
+}
+
+.social-icons a{
+margin-right:15px;
+font-size:20px;
+color:#283618;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+color:#BC6E25;
+}
+
+.portfolio-btn{
+display:inline-block;
+padding:12px 24px;
+background:#BC6E25;
+color:white;
+text-decoration:none;
+border-radius:6px;
+transition:0.3s;
+}
+
+.portfolio-btn:hover{
+background:#283618;
+}
+
+
+/* Image */
+
+.hero-image img{
+width:100%;
+max-width:400px;
+border-radius:12px;
+}
+
+
+/* Sections */
+
+.section{
+padding:80px 10%;
+text-align:center;
+}
+
+.section h2{
+font-family:'Playfair Display', serif;
+font-size:36px;
+margin-bottom:20px;
+}
+
+.section p{
+max-width:700px;
+margin:auto;
+color:#444;
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero-container{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text{
+order:1;
+}
+
+.hero-image{
+order:2;
+}
+
+.nav-links{
+gap:15px;
+}
+
+.hero-text h1{
+font-size:36px;
+}
+
+}
